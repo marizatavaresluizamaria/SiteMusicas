@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        body{
+            background-color: #f0d9cc;
+        }
+        #container{
+            background-color: rgb(70, 28, 28);
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            min-width: 950px;
+        }
+        .menutop{
+            width: 100%;
+            height:300px;
+            border-top: 30px solid #04819d;
+            background-color: rgb(244, 233, 233);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 223, 223);
+        }
+        a:hover{
+            color: white;
+        }
+        .topdir{
+            float: left;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 100px;
+            color: #04819d;
+            padding-left: 35px;
+            padding-top: 20px;
+        }
+        .menu{
+            background: #04819d;
+            height: 40px;
+            width: 100%;
+        }
+        .menu ul{
+            width: 100%;
+        }
+        .menu ul li{
+            background-color: #04819d;
+            width: 100%;
+            height: 40px;
+            height: left;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .menu ul li:hover{
+            background-color: #e55353;
+        }
+        .menu ul{
+            padding: 0;
+            max-width: 100%;
+        }
+        .menu ul ul{
+            display: none;
+        }
+        .menu ul li:hover > ul{
+            display: block;
+
+        }
+        .menu ul ul{
+            position: absolute;
+            top: 40px;
+            color: rgb(255, 223, 223);
+        }
+
+        .menu ul li:hover{
+            background-color: #832a2f;
+            color: azure;
+
+        }
+        .menu ul ul ul li:hover{
+            background-color: rgb(255, 153, 0);
+        }
+
+        .corT{
+        float: left;
+        width: 290px;
+        height: 200px; 
+        text-align: center;
+        background-color: #f0d9cc;
+        color: aliceblue;
+        border-bottom: #fc8e21;
+        padding: 90px 85px 85px 90px;
+        }
+
+        .meio{
+        width: 100%;
+        float: center;
+        background-color: #f0d9cc;
+        text-align: center;
+        }
+
+        img.img-noticia{
+        width: 60%;
+        padding: 2%;
+        }
+
+        .clear{
+        clear: both;
+        }
+
+        .roda{
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        }
+
+
+
+
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        body{
+            background-color:  #f0d9cc;
+        }
+        #container{
+            background-color: white;
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            min-width: 90px;
+        }
+        .menutop{
+            width: 100%;
+            height:372px;
+            border-top: 30px solid #04819d;
+            background-color: #04819d;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: white;
+        }
+        .topdir{
+            float: left;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 100px;
+            color: #04819d;
+            padding-left: 35px;
+            padding-top: 20px;
+        }
+        .menu{
+            background: #04819d;
+            height: 40px;
+            width: 100%;
+        }
+        .menu ul{
+            width: 90%;
+        }
+        .menu ul li{
+            background-color: #04819d;
+            width: 190px;
+            height: 40px;
+            height: left;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .menu ul li:hover{
+            background-color: #e55353;
+        }
+        .menu ul{
+            padding: 0;
+            max-width: 100%;
+        }
+        .menu ul ul{
+            display: none;
+        }
+        .menu ul li:hover > ul{
+            display: block;
+
+        }
+        .menu ul ul{
+            position: absolute;
+            top: 40px;
+            color: white;
+        }
+
+        .menu ul li:hover{
+            background-color: #832a2f;
+            color: azure;
+
+        }
+        .menu ul ul ul li:hover{
+            background-color: rgb(255, 153, 0);
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 80px;
+            text-align: center;
+            font-style: italic;
+        }
+        p{
+            font-family: sans-serif;
+        }
+        .floatleft{
+            float: left;
+            height: 50px;
+            height: 900px;
+            margin: 3px;
+            text-align: left;
+        }
+        .floatright{
+            float: left;
+            height: 450px;
+            height: 350px;
+            margin: 3px;
+            text-align: left;
+        }
+        .float{
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="menutop">
+                <img src="IMAGENS/banner--musicplay-GIF.gif" width="100%">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ROCK</a>
+                                <ul>
+                                    <li><a href="#">NACIONAL</a></li>
+                                    <li><a href="#">INTERNACIONAL</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">POP INTER.</a></li>
+                            <li><a href="#">PAGODE</a></li>
+                            <li><a href="#">FUNK</a></li>
+                            <li><a href="#">TRAP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header><!--Menu Fim-->
+
+    <div class="meio">
+        <h2>SOBRE NÓS</h2>
+        <img class="img-noticia" src="IMAGENS/banner2.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+    
+        <h2>EQUIPE</h2>
+        <img class="img-noticia" src="IMAGENS/imagemfundo2.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum suscipit 
+        voluptatibus rem, excepturi at minus dolor officia adipisci, perspiciatis, illo
+        quisquam eum odit exercitationem a laudantium quia rerum autem.</p>
+    <hr>
+       
+          <main>
+     
+        <img class="corT" src="IMAGENS/violão.jpg" height="130" width="200">
+        <legend></legend>
+        
+    
+        <img class="corT" src="IMAGENS/bateria" height="130" width="200">
+        <legend></legend>
+    
+        <img class="corT" src="IMAGENS/teclado.jpg" height="130" width="200">
+        <legend></legend>
+    </main>
+        
+    
+           </main>
+        <div class="clear"></div>
+            <footer>
+    
+        <div class="roda">
+            RODAPÉ
+        </div>
+    
+            </footer>
+            </div>
+    </body>
+    </html>
