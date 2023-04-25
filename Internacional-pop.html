@@ -8,20 +8,26 @@
     <style>
         *{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: #f0d9cc;
             margin: 0 auto;
             padding: 0;
+            color: rgb(255, 255, 255);
         }
 
         #container{
-            background-color: rgb(70, 28, 28);
+            background-color: #000000;
             width: 90%;
             margin-top: 30px;
             margin-bottom: 30px;
             min-width: 950px;
         }
-        .h1{
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
             text-align: center;
+            font-style: italic;
+            padding-top: 70px ;
+            padding-bottom: 10px;
+            color: rgb(255, 255, 255);
         }
         .float{
             float: left;
@@ -33,7 +39,10 @@
             margin: 3px;
             text-align: left;
         }
-
+        .esquerda p{
+            text-align: justify;
+            padding-right: 10px;
+        }
         .direita{
             height: 450px;
             width: 350px;
@@ -55,92 +64,81 @@
         }
 
         .rodape{
-            background-color:  #04819d;
-            height: 40px;
+            background-color:  #20e44a;
+            height: 50px;
             width: 100%;
+            text-align: center;
+            font-size: 13px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: rgb(255, 255, 255);
         }
         body{
-            background-color: #f0d9cc;
+            background-color: #000000;
         }
         .menutop{
             width: 100%;
             height:300px;
-            border-top: 30px solid #04819d;
-            background-color: rgb(244, 233, 233);
+            border-top: 30px solid #000000;
+        }
+        .menutop img{
+            margin-bottom: -4px;
         }
         a{
             text-decoration: none;
-            color: rgb(255, 223, 223);
+            color: rgb(255, 255, 255);
         }
-        a:hover{
-            color: white;
-        }
-        .topdir{
-            float: left;
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 100px;
-            color: #04819d;
-            padding-left: 35px;
-            padding-top: 20px;
-        }
+
         .menu{
-            background-color: #04819d;
+            background-color: #20e44a;
             height: 40px;
             width: 100%;
-        }
-        .menu_fundo{
-            background-color: #04819d;
+     
         }
         .menu ul{
             width: 90%;
+            max-width: 100%;
         }
         .menu ul li{
-            background-color: #04819d;
+            background-color: #20e44a;
             width: 190px;
             height: 40px;
-            height: left;
             display: inline-block;
             text-align: center;
             line-height: 40px;
             position: relative;
-        }
-        .menu ul li:hover{
-            background-color: #e55353;
-        }
-        .menu ul{
-            padding: 0;
-            max-width: 100%;
+         
         }
         .menu ul ul{
             display: none;
+            position: absolute;
+            top: 40px;
+            color: rgb(255, 255, 255);
         }
         .menu ul li:hover > ul{
             display: block;
 
         }
-        .menu ul ul{
-            position: absolute;
-            top: 40px;
-            color: rgb(255, 223, 223);
-        }
-
         .menu ul li:hover{
-            background-color: #832a2f;
-            color: azure;
+            background-color: #1a711b;
+            color: rgb(255, 255, 255);
 
         }
-        .menu ul ul ul li:hover{
-            background-color: rgb(255, 153, 0);
+       
+        .imagens{
+            height: 250;
+            width:270;
+            border-radius: 100%;
         }
+       
     </style>
 </head>
 <body>
     <div id="container">
         <header>
-            <div class="clear"> 
+         
                 <div class="menutop">
-                    <img src="imagens/banner- musicplay.png" width="100%">
+                    <img src="imagens/banner-play-music-GIF.gif" width="100%">
                     <div class="menu">
                             <nav>
                                 <ul>
@@ -159,10 +157,12 @@
                             </nav>
                     </div>
                 </div>
-            </div>
+
         </header>
+
+        
         <main>
-            <div class="h1"> <h1> ORIGEM </h1></div>
+            <div class="h1"> <h1> ORIGEM </h1> </div>
             <div class="float">
                 <div class="esquerda"> 
                     <p> O Pop surgiu nos Estados Unidos na década de 50. O estilo musical é marcado pela conservação da estrutura formal da música: “verso – estribilho – verso”, executada de modo sensível e melódico, normalmente assimilado por um grande público. Ainda são características dos cantores Pop o hábito de fazer cenários de shows extravagantes, muita dança e inúmeros outros artíficios. </p>
@@ -176,30 +176,30 @@
             </div>
             <div class="h1"> <h1> ARTISTAS EM DESTAQUE </h1> </div>
                 <div class="corT">
-                    <img class="cent" src="imagens/taylor-swift.jpg" height="200" width="270">
+                    <img src="imagens/taylor-swift.jpg" height="200" width="270">
                     <legend>Taylor Swift</legend>
                 </div>
                 <div class="corT">
-                    <img class="cent" src="imagens/Lana-del-Rey.jpg" height="200" width="270">
+                    <img src="imagens/Lana-del-Rey.jpg" height="200" width="270">
                     <legend>Lana del Rey</legend>
                 </div>
                 <div class="corT">
-                    <img class="cent" src="imagens/coldplay.jpg" height="200" width="270">
+                    <img src="imagens/coldplay.jpg" height="200" width="270">
                     <legend>ColdPlay</legend>
                 </div>
             <!-- Músicas em alta-->
             
             <div class="h1"> <h1> MÚSICAS EM ALTA</h1> </div>
                 <div class="corT">
-                    <img class="cent" src="imagens/m1.jpg" height="250" width="270">
+                    <img class="imagens" src="imagens/m1.jpg" height="250" width="270">
                     <legend>Calm down Selena Gomez, Rema</legend>
                 </div>
                 <div class="corT">
-                    <img class="cent" src="imagens/m2.jpg" height="250" width="270">
+                    <img class="imagens" src="imagens/m2.jpg" height="250" width="270">
                     <legend> Flowers Miley Cyrus</legend>
                 </div>
                 <div class="corT">
-                    <img class="cent" src="imagens/m3.jpg" height="250" width="270">
+                    <img class="imagens" src="imagens/m3.jpg" height="250" width="270">
                     <legend>As it was Harry Styles</legend>
                 </div>
                 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
@@ -207,7 +207,7 @@
             </main>
             <footer>
                 <div class="rodape">
-                    rodapé
+                    <p>  Copyright &copy; MusicPlay- Site de Músicas <br> Santa Cruz do Rio Pardo-SP  </p>
                 </div>
             </footer>
     </div>
