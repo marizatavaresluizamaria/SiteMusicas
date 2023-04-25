@@ -4,167 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <style>     
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    main{margin-top: 260px;
-    }
-    p{text-align: justify;
-    line-height: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
-    }
-    a{text-decoration:wavy;
-    }
-    a:hover{color: rgb(0, 0, 0);
-    }
-    .menu_top{
-    width: 100%;
-    height: 170px;
-    border-bottom: 3px solid #000000;
-    border-top: 10px solid #000000;
-    background-color: rgb(250, 250, 250);
-    }
-    .top_esp{
-        width: 140px;
-        float: left;
-        padding: 10px;
-    }
-    .top_fif{
-        width: 140px;
-        float: right;
-        padding: 10px;
-    }
-    .top_dir{
-    background-color: #000000;
-    float: left;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 100px;
-    color: rgb(0, 0, 0);
-    padding-left: 35px;
-    padding-top: 20px;
-    }
-   
-    .menu_down{
-    background: #000000;
-    height: 57px;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    text-align: center ;
-    }
-    span{
-        padding: 5px;
-        color: #fdfdf9;
+    <title> HOME</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            color: rgb(255, 255, 255);
         }
-    span:hover{
-        padding: 3px;
-        color: #3C2A21;
-        }
-    .menu{
-        position: relative;
-        top: 15px;
-        border-right: solid 2px #000000;
-        padding: 10px;
-        color: aliceblue;
-    }
-    .clear{ clear: both;}
-    .text{ 
-        text-align: center;
-        background-color: #3C2A21;
-        color: rgb(123, 10, 243);
-        font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;}
-    .corT{
-        float: left;
-        padding: 10px 10px 10px 10px;
-        width: 460px;
-        height: 360px; 
-        text-align: center;
-        border-top:  double 2px rgb(184, 120, 3);
-        border-bottom: double 2px rgb(184, 120, 3);
-        background-color: #000000;
-        color: aliceblue;
-        }
-</style>
 
-</head>
+        #container{
+            background-color: #000000;
+            width: 90%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            min-width: 950px;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+            padding-top: 70px ;
+            padding-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .float{
+            float: left;
+        }
+        .esquerda{
+            height: 200px;
+            width: 900px;
+            float: left;
+            margin: 3px;
+            text-align: left;
+        }
 
+        .direita{
+            height: 450px;
+            width: 350px;
+            float: left;
+            margin: 3px;
+            text-align: left;
+           
+        }
+
+        .corT{
+            float: left;
+            padding: 50px 50px 50px 50px;
+            width: 320px;
+            height: 220px;
+            text-align: center;
+        }
+        .art{
+            text-align: center;
+        }
+
+        .rodape{
+            background-color:  #20e44a;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: rgb(255, 255, 255);
+        }
+        body{
+            background-color: #000000;
+        }
+        .menutop{
+            width: 100%;
+            height:300px;
+            border-top: 30px solid #20e44a;
+        }
+        .menutop img{
+            margin-bottom: -4px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .menu{
+            background-color: #20e44a;
+            height: 40px;
+            width: 100%;
+     
+        }
+        .menu ul{
+            width: 90%;
+            max-width: 100%;
+        }
+        .menu ul li{
+            background-color: #20e44a;
+            width: 190px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+         
+        }
+        .menu ul ul{
+            display: none;
+            position: absolute;
+            top: 40px;
+            color: rgb(255, 255, 255);
+        }
+        .menu ul li:hover > ul{
+            display: block;
+
+        }
+        .menu ul li:hover{
+            background-color: #19ad39;
+            color: rgb(255, 255, 255);
+
+        }
+       
+        .imagens{
+            height: 250;
+            width:270;
+            border-radius: 100%;
+        }
+       
+        
+    </style>
 </head>
 <body>
-    <header>
-        <div class="menu_top">
-            <div class="top_esp">
-             <figure>
-               <img src="IMAGENS/slogancacaushow.jpg" > 
-                </figure></div>
-             <div class="top_fif">
-                <form action="#">
-                <imput type="text" name="nome"/><button>Pesquisar</button>
-                <img src="IMAGENS/logowhatsapp.jpg" alt="" width="30px" height="30">
-            </form>
+    <div id="container">
+        <header>
+         
+                <div class="menutop">
+                    <img src="imagens/banner- musicplay.png" width="100%">
+                    <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">ROCK</a>
+                                        <ul>
+                                            <li>NACIONAL</li>
+                                            <li>INTERNACIONAL</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">POP INTER.</a></li>
+                                    <li><a href="#">PAGODE</a></li>
+                                    <li><a href="#">FUNK</a></li>
+                                    <li><a href="#">TRAP</a></li>
+                                </ul>
+                            </nav>
+                    </div>
+                </div>
+
+        </header>
+
+        
+        <main>
+            <div class="h1"> <h1> ORIGEM </h1> </div>
+            <div class="float">
+                <div class="esquerda"> 
+                    <p> O Pop surgiu nos Estados Unidos na década de 50. O estilo musical é marcado pela conservação da estrutura formal da música: “verso – estribilho – verso”, executada de modo sensível e melódico, normalmente assimilado por um grande público. Ainda são características dos cantores Pop o hábito de fazer cenários de shows extravagantes, muita dança e inúmeros outros artíficios. </p>
+                    <p>A história do Pop se inicia um pouco antes, na década de 30, pois foi nesse período que surgiram estilos que influenciariam mais tarde o desenvolvimento do gênero, como o Blues e o Country. De fato, os cantores mais famosos da década de 50 foram Bing Crosby, Frank Sinatra, Dean Martin e indiretamente, Elvis Presley.</p>
+                    <p> Com a evolução do estilo musical, cantores como Bob Dylan, Carole King, Neil Diamond, ídolos dos adolescentes da época, surgiram nesse período. Além disso, algumas músicas do The Beatles também tiveram sua faceta Pop. Percebe-se uma tendência das cantoras “princesas do Pop” como Britney Spears e Christina Aguilera, que até então tinham uma temática mais romântica, a seguir o mesmo estilo de Madonna, com músicas de temática sensual. </p>
+                    <p> Surge também novas estrelas como Avril Lavigne, Hilary Duff e Lindsay Lohan. Não podemos esquecer de ressaltar o fenômeno “college Pop” (grupo de cantores vestidos de estudantes adolescentes) que desencadeou o fenômeno mexicano RBD, em 2004, e mais recentemente o outro fenômeno da Disney, High School Musical. </p>
+                </div>
+                <div class="direita">
+                    <img src="imagens/pop.jpg" height="300px" width="400px">
+                </div>
             </div>
-        </div>
-        <div class="clear"></div>
-        <div class="menu_down">
-            <nav>
-                
-                <span class="menu"><a href="#">HOME</a></span>
-                <span class="menu"><a href="#">POP INTERNACIONAL</a></span>
-                <span class="menu"><a href="#">ROCK INTERNACIONAL</a></span>
-                <span class="menu"><a href="#">ROCK NACIONAL</a></span>
-                <span class="menu"><a href="#">PAGODE</a></span>
-                <span class="menu"><a href="#">TRAP</a></span>
-                <span class="menu"><a href="#">FUNK</a></span>
-                <span class="menu"><a href="#">SERTANEJO MODÃO</a></span>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div>
-            <img src="IMAGENS/imagem cacau show" alt="" width="1460" height="">
-        </div>
-    </main>
-    <div class="corT">
-        <img class="cent" src="IMAGENS/choco1.jpg" height="200" width="270">
-        <legend>EXPLOSÃO</legend>
+            <div class="h1"> <h1> ARTISTAS EM DESTAQUE </h1> </div>
+                <div class="corT">
+                    <img src="imagens/taylor-swift.jpg" height="200" width="270">
+                    <legend>Taylor Swift</legend>
+                </div>
+                <div class="corT">
+                    <img src="imagens/Lana-del-Rey.jpg" height="200" width="270">
+                    <legend>Lana del Rey</legend>
+                </div>
+                <div class="corT">
+                    <img src="imagens/coldplay.jpg" height="200" width="270">
+                    <legend>ColdPlay</legend>
+                </div>
+            <!-- Músicas em alta-->
+            
+            <div class="h1"> <h1> MÚSICAS EM ALTA</h1> </div>
+                <div class="corT">
+                    <img class="imagens" src="imagens/m1.jpg" height="250" width="270">
+                    <legend>Calm down Selena Gomez, Rema</legend>
+                </div>
+                <div class="corT">
+                    <img class="imagens" src="imagens/m2.jpg" height="250" width="270">
+                    <legend> Flowers Miley Cyrus</legend>
+                </div>
+                <div class="corT">
+                    <img class="imagens" src="imagens/m3.jpg" height="250" width="270">
+                    <legend>As it was Harry Styles</legend>
+                </div>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        
+            </main>
+            <footer>
+                <div class="rodape">
+                    <p>  Copyright &copy; MusicPlay- Site de Músicas <br> Santa Cruz do Rio Pardo-SP  </p>
+                </div>
+            </footer>
     </div>
-    <div class="corT">
-        <img class="cent" src="IMAGENS/choco2.jpg" height="200" width="270">
-        <legend>DE</legend>
-    </div>
-    <div class="corT">
-        <img class="cent" src="IMAGENS/choco3.jpg" height="200" width="270">
-        <legend>SABORES</legend>
-    </div>
-    <div class="corT">
-        <img class="cent" src="IMAGENS/choco3.jpg" height="200" width="270">
-        <legend>EXPLOSÃO</legend>
-    </div>
-    <div class="corT">
-        <img class="cent" src="IMAGENS/choco2.jpg" height="200" width="270">
-        <legend>DE</legend>
-    </div>
-    <div class="corT">
-        <img class="cent" src="IMAGENS/choco1.jpg" height="200" width="270">
-        <legend>SABORES</legend>
-    </div>
-    <hr>
-    <footer>
-    <footer>
-        <div class="text"><p class="cent"></p><small> &copy; Lorem ipsum <br> SENAI/SP</small></div>
-    </footer>
-    </header>
 </body>
 </html>

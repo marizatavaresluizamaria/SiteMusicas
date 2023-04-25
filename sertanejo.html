@@ -1,158 +1,217 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Nacional</title>
+    <title> ROCK INTERNACIONAL</title>
     <style>
         *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0 auto;
             padding: 0;
+            color: rgb(255, 255, 255);
+        }
+
+        #container{
+            background-color: #000000;
+            width: 90%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            min-width: 950px;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+            padding-top: 70px ;
+            padding-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .float{
+            float: left;
+        }
+        .esquerda{
+            height: 200px;
+            width: 900px;
+            float: left;
+            margin: 3px;
+            text-align: left;
+        }
+        .esquerda p{
+            text-align: justify;
+            padding-right: 10px;
+        }
+
+        .direita{
+            height: 400px;
+            width: 370px;
+            float: left;
+            margin: 3px;
+            text-align: left;
+           
+        }
+
+        .corT{
+            float: left;
+            padding: 50px 50px 50px 50px;
+            width: 320px;
+            height: 220px;
+            text-align: center;
+        }
+        .art{
+            text-align: center;
+        }
+
+        .rodape{
+            background-color:  #20e44a;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: rgb(255, 255, 255);
         }
         body{
-            background-color:  #f0d9cc;
-        }
-        #container{
-            background-color: white;
-            width: 100%;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            min-width: 90px;
+            background-color: #000000;
         }
         .menutop{
             width: 100%;
-            height:372px;
-            border-top: 30px solid #04819d;
-            background-color: #04819d;
+            height:300px;
+            border-top: 30px solid #000000;
+        }
+        .menutop img{
+            margin-bottom: -4px;
         }
         a{
             text-decoration: none;
-            color: white;
+            color: rgb(255, 255, 255);
         }
-        a:hover{
-            color: white;
-        }
-        .topdir{
-            float: left;
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 100px;
-            color: #04819d;
-            padding-left: 35px;
-            padding-top: 20px;
-        }
+
         .menu{
-            background: #04819d;
+            background-color: #20e44a;
             height: 40px;
             width: 100%;
+     
         }
         .menu ul{
             width: 90%;
+            max-width: 100%;
         }
         .menu ul li{
-            background-color: #04819d;
+            background-color: #20e44a;
             width: 190px;
             height: 40px;
-            height: left;
             display: inline-block;
             text-align: center;
             line-height: 40px;
             position: relative;
-        }
-        .menu ul li:hover{
-            background-color: #e55353;
-        }
-        .menu ul{
-            padding: 0;
-            max-width: 100%;
+         
         }
         .menu ul ul{
             display: none;
+            position: absolute;
+            top: 40px;
+            color: rgb(255, 255, 255);
         }
         .menu ul li:hover > ul{
             display: block;
 
         }
-        .menu ul ul{
-            position: absolute;
-            top: 40px;
-            color: white;
-        }
-
         .menu ul li:hover{
-            background-color: #832a2f;
-            color: azure;
+            background-color: #1a711b;
+            color: rgb(255, 255, 255);
 
         }
-        .menu ul ul ul li:hover{
-            background-color: rgb(255, 153, 0);
+       
+        .imagens{
+            height: 250;
+            width:270;
+            border-radius: 100%;
         }
-        h1{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
-            text-align: center;
-            font-style: italic;
-        }
-        p{
-            font-family: sans-serif;
-        }
-        .floatleft{
-            float: left;
-            height: 50px;
-            height: 900px;
-            margin: 3px;
-            text-align: left;
-        }
-        .floatright{
-            float: left;
-            height: 450px;
-            height: 350px;
-            margin: 3px;
-            text-align: left;
-        }
-        .float{
-            float: left;
-        }
-        .clear{
-            clear: both;
-        }
+       
+        
     </style>
 </head>
 <body>
     <div id="container">
         <header>
-            <div class="menutop">
-                <img src="Images/banner.jpg" width="100%">
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ROCK</a>
+         
+                <div class="menutop">
+                    <img src="Images/BANNER3.gif" width="100%">
+                    <div class="menu">
+                            <nav>
                                 <ul>
-                                    <li><a href="#">NACIONAL</a></li>
-                                    <li><a href="#">INTERNACIONAL</a></li>
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">ROCK</a>
+                                        <ul>
+                                            <li>NACIONAL</li>
+                                            <li>INTERNACIONAL</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">POP INTER.</a></li>
+                                    <li><a href="#">PAGODE</a></li>
+                                    <li><a href="#">FUNK</a></li>
+                                    <li><a href="#">TRAP</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#">POP INTER.</a></li>
-                            <li><a href="#">PAGODE</a></li>
-                            <li><a href="#">FUNK</a></li>
-                            <li><a href="#">TRAP</a></li>
-                        </ul>
-                    </nav>
+                            </nav>
+                    </div>
                 </div>
-            </div>
-        </header><!--Menu Fim-->
-        <main>
-            <div><h1>ORIGEM</h1></div>
-            <div class="">
-                <div>
 
+        </header>
+
+        
+        <main>
+            <div class="h1"> <h1> ORIGEM </h1> </div>
+            <div class="float">
+                <div class="esquerda"> 
+                    <p>Música sertaneja é um gênero musical do Brasil produzido a partir da década de 1910 por compositores urbanos e rurais. As músicas podem ser chamadas genericamente de modas e emboladas e o som da viola é predominante.[2] O sertanejo é atualmente um dos mais populares estilos musicais no Brasil, superando inclusive o funk[3] na maioria dos estados do país, sobretudo em São Paulo, Minas Gerais, Goiás, Rio de Janeiro, Rio Grande do Sul, Mato Grosso do Sul, Mato Grosso, Rondônia, Tocantins e Paraná.</p>
+                    <p>O gênero musical sertanejo mais famoso é o sertanejo caipira[por quem?], ou música caipira. Esse gênero musical caipira historicamente teve início com o bandeirismo, um movimento de desbravamento do interior da América do Sul formado por sertanistas paulistas. Antonio Candido definiu como Paulistânia todo o eixo de expansão e difusão da cultura bandeirante. Região esta onde se fixou o que entendemos por cultura caipira. Os estados de São Paulo, Goiás, Mato Grosso do Sul, metade Norte do Paraná, parte de Tocantins, parte do Mato Grosso e regiões como Sul de Minas, Sul do Rio de Janeiro e Triângulo Mineiro, são os locais onde se ambientaram esses valores. </p>
+                    <p>Inicialmente tal estilo de música foi propagado por uma série de duplas, com a utilização de violas e dueto vocal. Esta tradição segue até os dias atuais, sendo a dupla geralmente caracterizada por cantores com voz tenor (mais aguda), nasal e uso acentuado de um falsete típico. Enquanto o estilo vocal manteve-se relativamente estável ao longo das décadas, o ritmo, a instrumentação e o contorno melódico incorporaram aos poucos elementos de gêneros disseminados pela indústria cultural.[2][2]</p>
+                    <p>ais modificações dentro do gênero musical]</p>
+                </div>
+                <div class="direita">
+                    <img src="IMAGENS/TIOJESS.JPG" height="300px" width="400px">
                 </div>
             </div>
-        </main>
-        <footer>
-        </footer>
+            <div class="h1"> <h1> ARTISTAS EM DESTAQUE </h1> </div>
+                <div class="corT">
+                    <img src="IMAGENS/GUSTAVOLINDO E VC TCHERERE TCHE TCHE.JPG" height="200" width="270">
+                    <legend>GUSTAVO LIMA</legend>
+                </div>
+                <div class="corT">
+                    <img src="IMAGENS/NICKELBACK.JPG" height="200" width="270">
+                    <legend>Nickelback</legend>
+                </div>
+                <div class="corT">
+                    <img src="IMAGENS/MARRON5.JPG" height="200" width="270">
+                    <legend>Marron 5</legend>
+                </div>
+            <!-- Músicas em alta-->
+            
+            <div class="h1"> <h1> MÚSICAS EM ALTA</h1> </div>
+                <div class="corT">
+                    <img class="imagens" src="IMAGENS/THE LONELIEST MANESKIN.JPG" height="250" width="270">
+                    <legend>THE LONELIEST - MANESKIN</legend>
+                </div>
+                <div class="corT">
+                    <img class="imagens" src="IMAGENS/SHARKS IMAGINE DRAGONS.JPG" height="250" width="270">
+                    <legend> SHARKS - IMAGINE DRAGONS</legend>
+                </div>
+                <div class="corT">
+                    <img class="imagens" src="IMAGENS/EDGING BLINK 182" height="250" width="270">
+                    <legend>EDGING - BLINK-182</legend>
+                </div>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        
+            </main>
+            <footer>
+                <div class="rodape">
+                    <p>  Copyright &copy; MusicPlay- Site de Músicas <br> Santa Cruz do Rio Pardo-SP  </p>
+                </div>
+            </footer>
     </div>
 </body>
 </html>
